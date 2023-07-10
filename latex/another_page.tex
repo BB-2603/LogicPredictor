@@ -1,0 +1,78 @@
+The functions in this assignment are made with these algorithms in mind.\hypertarget{another_page_task1_sec}{}\doxysection{String Formatting\+:}\label{another_page_task1_sec}
+Step 1. Receive input string from user.
+
+Step 2. Tokenize string into 3 or 4 tokens, each containing the statement, the rule and the line(s).
+
+Step 3. If necessary, remove brackets from compound statements.
+
+Step 4. Reformat statement to get the 2 propositional statements present in the compound statement involving each rule.
+
+Step 5. Check for the rule used in each statement.
+
+Step 6. Check if each rule is valid.
+
+Step 7. If all rules are valid, print \char`\"{}\+Valid Proof\char`\"{}. If any statement is invalid, print \char`\"{}\+Invalid Proof\char`\"{}.
+
+Step 8 Exit.\hypertarget{another_page_task2_sec}{}\doxysection{Add PREMISE\+:}\label{another_page_task2_sec}
+Step 1. Take 2 string vectors as parameters.
+
+Step 2. Assign first vector as Tokens of input string.
+
+Step 3. Save premise statement in Token\mbox{[}0\mbox{]} to second vector Lines
+
+Step 4. Return true.\hypertarget{another_page_task3_sec}{}\doxysection{AND Introduction\+:}\label{another_page_task3_sec}
+Step 1\+:Take 2 string vectors as parameters.
+
+Step 2\+:Assign first vector as Tokens of input string.
+
+Step 3. Remove brackets of input string, stored in Token\mbox{[}0\mbox{]}
+
+Step 4\+: Reformat new string to separate 2 propositional statements conjoined by \textquotesingle{}$^\wedge$\textquotesingle{}.
+
+Step 5\+: Check if both statements are stored in the Lines vector using the lines inputed.
+
+Step 6\+: If yes, AND introduction rule is valid and return true, else return false.\hypertarget{another_page_task4_sec}{}\doxysection{AND elimination\+:}\label{another_page_task4_sec}
+Step 1.\+Take 2 string vectors as parameters.
+
+Step 2. Assign first vector as Tokens of input string.
+
+Step 3. Remove brackets of AND induced string mentioned by line number in input string.
+
+Step 4\+: Reformat new AND string to get both halves of the rule.
+
+Step 5. Check if inputed statement is equal to one half of the AND string.
+
+Step 6. If yes, AND elimination holds and return true, else return false.\hypertarget{another_page_task5_sec}{}\doxysection{OR Introduction\+:}\label{another_page_task5_sec}
+Step 1\+:Take 2 string vectors as parameters.
+
+Step 2\+:Assign first vector as Tokens of input string.
+
+Step 3. Remove brackets of input string, stored in Token\mbox{[}0\mbox{]}
+
+Step 4\+: Reformat new string to separate 2 propositional statements conjoined by \textquotesingle{}v\textquotesingle{}.
+
+Step 5\+: Check if one of the halves is equal to the statement in vector Lines mentioned by the line number in input statement.
+
+Step 6\+: If yes, OR introduction rule is valid and return true, else return false.\hypertarget{another_page_task4_sec}{}\doxysection{AND elimination\+:}\label{another_page_task4_sec}
+Step 1.\+Take 2 string vectors as parameters.
+
+Step 2. Assign first vector as Tokens of input string.
+
+Step 3. Remove brackets of IMPLICATION induced string mentioned by line number in input string.
+
+Step 4\+: Reformat new IMPLICATION string to get both halves of the rule.
+
+Step 5. Check if first half of the reformated string is present as a line in LINE vector and second half of the reformated string is present as a token of input statement.
+
+Step 6. If yes, IMPLICATION elimination holds and return true, else return false.\hypertarget{another_page_task4_sec}{}\doxysection{AND elimination\+:}\label{another_page_task4_sec}
+Step 1.\+Take 2 string vectors as parameters.
+
+Step 2. Assign first vector as Tokens of input string.
+
+Step 3. Remove brackets of IMPLICATION induced string mentioned by line number in input string.
+
+Step 4\+: Reformat new IMPLICATION string to get both halves of the rule.
+
+Step 5. Check if negation of second half of the reformated string is present as a line in LINE vector and negation of first half of the reformated string is present as a token of input statement.
+
+Step 6. If yes, IMPLICATION elimination holds and return true, else return false. 

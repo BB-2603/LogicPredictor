@@ -1,0 +1,4 @@
+﻿  Assignment2.cpp
+C:\Users\amanm\source\repos\Assignment2\Assignment2.cpp(72,31): warning C4267: 'initializing': conversion from 'size_t' to 'int', possible loss of data
+C:\Users\amanm\source\repos\Assignment2\Assignment2.cpp(139): warning C4715: 'andElimination': not all control paths return a value
+  Assignment2.vcxproj -> C:\Users\amanm\source\repos\Assignment2\x64\Debug\Assignment2.exe
